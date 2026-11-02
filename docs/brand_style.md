@@ -106,7 +106,7 @@ From top to bottom:
 1. **Cover:** the finding as a big title, one chart or a teaser crop. This is what stops the scroll.
 2. **Chart slides:** one finding per slide, title states it.
 3. **Context slide:** why it matters, the caveat (small sample, luck, etc.).
-4. **Method slide:** two or three plain sentences on how it was made, plus "Code: github.com/puckquant".
+4. **Method slide:** two or three plain sentences on how it was made, plus "Code: github.com/puckquant/puckquant".
 
 On X, post the strongest single chart with the sentence, then reply with the method and the repo link.
 

@@ -20,7 +20,7 @@ from matplotlib import font_manager
 # ---------- identity ----------
 BRAND = "PuckQuant"
 HANDLE = "@puckquant"
-CODE_URL = "github.com/puckquant"  # point at the repo itself once it exists
+CODE_URL = "github.com/puckquant/puckquant"
 
 # ---------- palette ----------
 # Brand colors (picked by Jackson)

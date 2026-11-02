@@ -16,9 +16,9 @@ You need Python and one helper tool called **uv**, which installs everything els
 
    Close the terminal and open a new one so it picks up the install.
 
-2. **Get the code.** Either `git clone https://github.com/puckquant/REPO.git` or download the zip and unzip it. Then move into the folder:
+2. **Get the code.** Either `git clone https://github.com/puckquant/puckquant.git` or download the zip and unzip it. Then move into the folder:
    ```
-   cd REPO
+   cd puckquant
    ```
 
 3. **Install the project.** This creates a private Python environment in `.venv/` and installs Python 3.12 too if you do not have it:
@@ -57,7 +57,6 @@ Charts land in `output/charts/` named `YYYY-MM-DD_chartname.png`. Raw API respon
 ## Before your first real post
 
 1. Confirm @puckquant is yours on Instagram and X. If either handle differs, change `HANDLE` at the top of `src/hockey/viz/style.py`.
-2. Once the repo exists, set `CODE_URL` in the same file to its full path (for example `github.com/puckquant/REPO`).
 3. Read `docs/brand_style.md` for the visual rules and the Canva/Figma workflow.
 
 ## Layout
