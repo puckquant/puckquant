@@ -8,7 +8,8 @@ from matplotlib.patches import Arc, Circle, Rectangle
 from hockey.viz import style
 
 
-def team_scatter(standings: pd.DataFrame, sample: bool = False, size: str = "square"):
+def team_scatter(standings: pd.DataFrame, sample: bool = False, size: str = "square",
+                 theme: str = style.DEFAULT_THEME):
     """Goals for vs goals against per game, all 32 teams.
 
     Y axis is flipped so "good" is always top right. Dashed lines are the
@@ -22,10 +23,11 @@ def team_scatter(standings: pd.DataFrame, sample: bool = False, size: str = "squ
         source="Data: NHL API  |  Code: github.com/yourname/repo",
         size=size,
         sample=sample,
+        theme=theme,
     )
     ax = post.ax
     df = standings
-    ax.scatter(df["gf_per_gp"], df["ga_per_gp"], s=260, color=style.PRIMARY, alpha=0.95,
+    ax.scatter(df["gf_per_gp"], df["ga_per_gp"], s=260, color=style.DATA, alpha=0.95,
                edgecolor=style.BG, linewidth=1.5, zorder=3)
     for _, r in df.iterrows():
         ax.annotate(r["team"], (r["gf_per_gp"], r["ga_per_gp"]), xytext=(0, 13),
@@ -60,10 +62,10 @@ def draw_half_rink(ax) -> None:
     """Offensive half of an NHL rink in NHL API coordinates (feet, center ice at 0)."""
     c = {"color": style.GRID, "lw": 2, "fill": False}
     ax.add_patch(Rectangle((0, -42.5), 100, 85, **c))           # outline (corners squared off)
-    ax.plot([25, 25], [-42.5, 42.5], color=style.ACCENT_2, lw=3, alpha=0.35)   # blue line
-    ax.plot([89, 89], [-42.5, 42.5], color=style.PRIMARY, lw=2, alpha=0.6)  # goal line
-    ax.add_patch(Arc((89, 0), 12, 12, theta1=90, theta2=270, color=style.PRIMARY, lw=2))  # crease
-    ax.add_patch(Rectangle((89, -3), 3.3, 6, color=style.PRIMARY, lw=2, fill=False))      # net
+    ax.plot([25, 25], [-42.5, 42.5], color=style.DATA_2, lw=3, alpha=0.35)   # blue line
+    ax.plot([89, 89], [-42.5, 42.5], color=style.DATA, lw=2, alpha=0.6)  # goal line
+    ax.add_patch(Arc((89, 0), 12, 12, theta1=90, theta2=270, color=style.DATA, lw=2))  # crease
+    ax.add_patch(Rectangle((89, -3), 3.3, 6, color=style.DATA, lw=2, fill=False))      # net
     for y in (22, -22):                                          # faceoff circles
         ax.add_patch(Circle((69, y), 15, **c))
         ax.add_patch(Circle((69, y), 1, color=style.GRID))
@@ -76,7 +78,7 @@ def draw_half_rink(ax) -> None:
 
 
 def shot_map(shots: pd.DataFrame, team: str, opponent: str, game_date: str,
-             sample: bool = False, size: str = "square"):
+             sample: bool = False, size: str = "square", theme: str = style.DEFAULT_THEME):
     """Every shot attempt by one team in one game. Goals are big and orange."""
     t = shots[shots["team"] == team]
     on_net = t[t["event"].isin(["shot-on-goal", "goal"])]
@@ -86,6 +88,7 @@ def shot_map(shots: pd.DataFrame, team: str, opponent: str, game_date: str,
         f"{game_date}  |  {len(t)} attempts, {len(on_net)} on net, {len(goals)} goals",
         size=size,
         sample=sample,
+        theme=theme,
     )
     ax = post.ax
     ax.set_facecolor(style.BG)
@@ -95,9 +98,9 @@ def shot_map(shots: pd.DataFrame, team: str, opponent: str, game_date: str,
     saves = t[t["event"] == "shot-on-goal"]
     ax.scatter(misses["x"], misses["y"], s=70, facecolor="none", edgecolor=style.MUTED,
                linewidth=1.5, label="Missed or blocked", zorder=3)
-    ax.scatter(saves["x"], saves["y"], s=90, color=style.ACCENT_2, alpha=0.8,
+    ax.scatter(saves["x"], saves["y"], s=90, color=style.DATA_2, alpha=0.8,
                label="Saved", zorder=4)
-    ax.scatter(goals["x"], goals["y"], s=320, color=style.PRIMARY, edgecolor=style.INK,
+    ax.scatter(goals["x"], goals["y"], s=320, color=style.DATA, edgecolor=style.INK,
                linewidth=2, label="Goal", zorder=5)
     leg = ax.legend(loc="lower left", bbox_to_anchor=(0, -0.08), ncol=3, frameon=False,
                     fontsize=14)

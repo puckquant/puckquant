@@ -23,17 +23,38 @@ HANDLE = "@yourhandle"
 
 # ---------- palette ----------
 # Brand colors (picked by Jackson)
-PRIMARY = "#D37F00"    # burnt orange: the main data color, goals, the finding
-SECONDARY = "#012622"  # deep green: background on every post
-ACCENT_1 = "#7E8287"   # slate gray: secondary text, axis labels, misses
-ACCENT_2 = "#D3FFF3"   # mint: titles and main text, second data series
+PRIMARY = "#D37F00"    # burnt orange
+SECONDARY = "#012622"  # deep green
+ACCENT_1 = "#7E8287"   # slate gray
+ACCENT_2 = "#D3FFF3"   # mint
 
-# Roles used by the chart code (derived from the four brand colors)
-BG = SECONDARY
-PANEL = "#0A3530"      # plot area, one step lighter than the background
-GRID = "#1F4A44"       # gridlines, rink markings, divider
-INK = ACCENT_2
-MUTED = ACCENT_1
+# Two themes built from those four colors. Pick one per chart with theme="green"
+# or theme="orange". Chart code only ever uses the role names (BG, INK, DATA...),
+# so every chart works in both themes.
+THEMES = {
+    "green": {               # deep green background, orange data
+        "BG": SECONDARY,
+        "PANEL": "#0A3530",  # plot area, one step lighter than the background
+        "GRID": "#1F4A44",   # gridlines, rink markings, divider
+        "INK": ACCENT_2,     # titles, labels
+        "MUTED": ACCENT_1,   # subtitles, axis text, source line, misses
+        "DATA": PRIMARY,     # main marks, goals
+        "DATA_2": ACCENT_2,  # second series
+    },
+    "orange": {              # burnt orange background, green data
+        "BG": PRIMARY,
+        "PANEL": "#C47600",  # one step darker than the background
+        "GRID": "#A86500",
+        "INK": SECONDARY,
+        "MUTED": "#3E3A15",  # deep green blended into the orange; gray is unreadable here
+        "DATA": SECONDARY,
+        "DATA_2": ACCENT_2,
+    },
+}
+DEFAULT_THEME = "green"
+
+# Current role colors. set_theme() overwrites these.
+BG = PANEL = GRID = INK = MUTED = DATA = DATA_2 = ""
 
 # ---------- canvas sizes (pixels) ----------
 SIZES = {
@@ -61,28 +82,36 @@ def _pick_font() -> str:
 
 FONT = _pick_font()
 
-plt.rcParams.update(
-    {
-        "font.family": FONT,
-        "font.size": 16,
-        "text.color": INK,
-        "axes.facecolor": PANEL,
-        "axes.edgecolor": GRID,
-        "axes.labelcolor": MUTED,
-        "axes.labelsize": 16,
-        "axes.grid": True,
-        "grid.color": GRID,
-        "grid.linewidth": 0.8,
-        "xtick.color": MUTED,
-        "ytick.color": MUTED,
-        "xtick.labelsize": 14,
-        "ytick.labelsize": 14,
-        "axes.spines.top": False,
-        "axes.spines.right": False,
-        "figure.facecolor": BG,
-        "savefig.facecolor": BG,
-    }
-)
+def set_theme(name: str = DEFAULT_THEME) -> None:
+    """Switch every role color (and matplotlib's defaults) to one theme."""
+    if name not in THEMES:
+        raise ValueError(f"Unknown theme {name!r}. Options: {', '.join(THEMES)}")
+    globals().update(THEMES[name])
+    plt.rcParams.update(
+        {
+            "font.family": FONT,
+            "font.size": 16,
+            "text.color": INK,
+            "axes.facecolor": PANEL,
+            "axes.edgecolor": GRID,
+            "axes.labelcolor": MUTED,
+            "axes.labelsize": 16,
+            "axes.grid": True,
+            "grid.color": GRID,
+            "grid.linewidth": 0.8,
+            "xtick.color": MUTED,
+            "ytick.color": MUTED,
+            "xtick.labelsize": 14,
+            "ytick.labelsize": 14,
+            "axes.spines.top": False,
+            "axes.spines.right": False,
+            "figure.facecolor": BG,
+            "savefig.facecolor": BG,
+        }
+    )
+
+
+set_theme()
 
 
 @dataclass
@@ -97,12 +126,15 @@ def new_post(
     source: str = "Data: NHL API",
     size: str = "square",
     sample: bool = False,
+    theme: str = DEFAULT_THEME,
 ) -> Post:
     """A blank, branded canvas with title, subtitle, footer and one plot area.
 
     Draw on `post.ax`, then call `save(post, name)`.
     Pass sample=True to stamp SAMPLE DATA across the image (for previews).
+    theme is "green" or "orange".
     """
+    set_theme(theme)
     w, h = SIZES[size]
     fig = plt.figure(figsize=(w / DPI, h / DPI), dpi=DPI)
     aspect = w / h
@@ -131,7 +163,7 @@ def new_post(
 
     if sample:
         fig.text(
-            0.5, 0.5, "SAMPLE DATA", fontsize=110, color=ACCENT_2, alpha=0.12,
+            0.5, 0.5, "SAMPLE DATA", fontsize=110, color=INK, alpha=0.12,
             ha="center", va="center", rotation=30, fontweight="bold", zorder=100,
         )
     return Post(fig, ax)
@@ -146,7 +178,8 @@ def save(post: Post, name: str, out_dir: Path = Path("output/charts")) -> Path:
     return path
 
 
-def text_slide(heading: str, body: list[str], kicker: str = "", size: str = "portrait") -> Post:
+def text_slide(heading: str, body: list[str], kicker: str = "", size: str = "portrait",
+               theme: str = DEFAULT_THEME) -> Post:
     """A text-only carousel slide (cover, context, or "how this works").
 
     `body` is a list of short paragraphs. Lines wrap automatically.
@@ -154,7 +187,8 @@ def text_slide(heading: str, body: list[str], kicker: str = "", size: str = "por
     """
     import textwrap
 
-    post = new_post(heading, kicker, source="Method + code: github.com/yourname/repo", size=size)
+    post = new_post(heading, kicker, source="Method + code: github.com/yourname/repo", size=size,
+                    theme=theme)
     post.ax.remove()
     w, h = SIZES[size]
     line_h = 36 / h          # one wrapped line of 24 pt text, as a fraction of the height

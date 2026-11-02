@@ -5,6 +5,7 @@ Examples:
     python -m hockey.make shotmap --date 2026-11-01 --team TOR
     python -m hockey.make standings --sample      # offline preview, watermarked
     python -m hockey.make standings --size portrait
+    python -m hockey.make standings --theme orange
 """
 
 from __future__ import annotations
@@ -23,14 +24,15 @@ def _sample(name: str) -> dict:
     return json.loads(resources.files("hockey.sample_data").joinpath(name).read_text())
 
 
-def make_standings(sample: bool, size: str) -> None:
+def make_standings(sample: bool, size: str, theme: str) -> None:
     raw = _sample("standings_sample.json") if sample else nhl_api.pull_standings()
     df = standings_table(raw)
-    path = style.save(charts.team_scatter(df, sample=sample, size=size), f"gf_ga_scatter_{size}")
+    post = charts.team_scatter(df, sample=sample, size=size, theme=theme)
+    path = style.save(post, f"gf_ga_scatter_{size}_{theme}")
     print(f"Saved {path}")
 
 
-def make_shotmap(day: date, team: str | None, sample: bool, size: str) -> None:
+def make_shotmap(day: date, team: str | None, sample: bool, size: str, theme: str) -> None:
     if sample:
         games = [_sample("pbp_sample.json")]
     else:
@@ -47,8 +49,8 @@ def make_shotmap(day: date, team: str | None, sample: bool, size: str) -> None:
             if team and t != team:
                 continue
             post = charts.shot_map(shots, t, opp, f"{day:%b} {day.day}, {day.year}",
-                                   sample=sample, size=size)
-            print(f"Saved {style.save(post, f'shotmap_{t}_vs_{opp}_{size}')}")
+                                   sample=sample, size=size, theme=theme)
+            print(f"Saved {style.save(post, f'shotmap_{t}_vs_{opp}_{size}_{theme}')}")
 
 
 def main() -> None:
@@ -58,14 +60,16 @@ def main() -> None:
                    default=date.today() - timedelta(days=1), help="for shotmap, YYYY-MM-DD")
     p.add_argument("--team", help="for shotmap, e.g. TOR. Default: every team that played")
     p.add_argument("--size", choices=list(style.SIZES), default="square")
+    p.add_argument("--theme", choices=list(style.THEMES), default=style.DEFAULT_THEME,
+                   help="green (green background) or orange (orange background)")
     p.add_argument("--sample", action="store_true",
                    help="use bundled fake data (no internet), stamped SAMPLE DATA")
     args = p.parse_args()
 
     if args.chart == "standings":
-        make_standings(args.sample, args.size)
+        make_standings(args.sample, args.size, args.theme)
     else:
-        make_shotmap(args.date, args.team, args.sample, args.size)
+        make_shotmap(args.date, args.team, args.sample, args.size, args.theme)
 
 
 if __name__ == "__main__":

@@ -41,6 +41,27 @@ Two working shades are derived from the background so the plot area and gridline
 | Panel | `#0A3530` | Plot area, cards |
 | Grid | `#1F4A44` | Gridlines, rink markings, divider line |
 
+### Two themes: green and orange
+
+Every chart can be made in either theme with `--theme green` (the default) or `--theme orange`. The layout, fonts and footer stay identical, so both read as the same brand.
+
+| Role | Green theme | Orange theme |
+| --- | --- | --- |
+| Background | Deep green `#012622` | Burnt orange `#D37F00` |
+| Plot area | `#0A3530` | `#C47600` |
+| Gridlines | `#1F4A44` | `#A86500` |
+| Titles and labels | Mint `#D3FFF3` | Deep green `#012622` |
+| Secondary text | Slate gray `#7E8287` | Dark olive `#3E3A15` (gray disappears on orange) |
+| Main data, goals | Burnt orange | Deep green |
+| Second series | Mint | Mint |
+
+When to use which:
+
+- **Green** is the everyday look: weekly league charts, shot maps, anything data-dense. It is easier on the eyes and lets orange carry the finding.
+- **Orange** is the loud look: carousel covers, big single-number posts, milestones, "on this day" history posts, and anything you want to stop the scroll. Use it for roughly one post in four so it stays special.
+- Inside one carousel, a good pattern is an orange cover, green chart slides, and an orange closing slide.
+- In the orange theme, mint is only for marks (dots, shapes), never for text. Its contrast on orange is too low to read.
+
 Rule of thumb: mint text on deep green, with orange on the data that matters. When one chart needs a highlight (one team, one player), make that one orange and push the rest to slate gray or faded mint. If everything is highlighted, nothing is.
 
 Contrast check: mint and orange both read clearly on the deep green. Slate gray is softer (about 4:1), so keep it for text 14 pt and up and never for the main finding.

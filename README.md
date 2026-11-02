@@ -45,6 +45,7 @@ You need Python and one helper tool called **uv**, which installs everything els
 | --- | --- |
 | League scatter from today's standings | `uv run python -m hockey.make standings` |
 | Same chart sized for an Instagram carousel (1080 x 1350) | `uv run python -m hockey.make standings --size portrait` |
+| Same chart with the orange background theme | `uv run python -m hockey.make standings --theme orange` |
 | Shot maps for every game last night | `uv run python -m hockey.make shotmap` |
 | Shot map for one team on one date | `uv run python -m hockey.make shotmap --date 2026-11-01 --team TOR` |
 | Just save raw standings JSON | `uv run python -m hockey.ingest.nhl_api standings` |
