@@ -57,7 +57,7 @@ Charts land in `output/charts/` named `YYYY-MM-DD_chartname.png`. Raw API respon
 ## Before your first real post
 
 1. Confirm @puckquant is yours on Instagram and X. If either handle differs, change `HANDLE` at the top of `src/hockey/viz/style.py`.
-3. Read `docs/brand_style.md` for the visual rules and the Canva/Figma workflow.
+2. Read `docs/brand_style.md` for the visual rules and the Canva/Figma workflow.
 
 ## Layout
 
