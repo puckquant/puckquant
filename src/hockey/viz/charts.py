@@ -20,7 +20,7 @@ def team_scatter(standings: pd.DataFrame, sample: bool = False, size: str = "squ
     post = style.new_post(
         "Who's scoring, who's stopping it",
         f"Goals for and against per game, all 32 teams, through {as_of}",
-        source="Data: NHL API  |  Code: github.com/yourname/repo",
+        source=f"Data: NHL API  |  Code: {style.CODE_URL}",
         size=size,
         sample=sample,
         theme=theme,

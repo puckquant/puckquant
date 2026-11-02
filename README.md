@@ -1,6 +1,6 @@
-# BRAND NAME: hockey analytics you can audit
+# PuckQuant: hockey analytics you can audit
 
-Every chart posted by **BRAND NAME** ([Instagram](https://instagram.com/yourhandle) · [X](https://x.com/yourhandle)) is built from the code in this repo, using free public NHL data. If you want to know how a number was made, the answer is here.
+Every chart posted by **PuckQuant** ([Instagram](https://instagram.com/puckquant) · [X](https://x.com/puckquant)) is built from the code in this repo, using free public NHL data. If you want to know how a number was made, the answer is here.
 
 Built by Your Name. Week 1 of the project: data pulls from the NHL API, a branded chart template, and the first two post types (a league-wide scatter and a single-game shot map). Models, a database, and a daily automated pipeline come in the following weeks.
 
@@ -16,7 +16,7 @@ You need Python and one helper tool called **uv**, which installs everything els
 
    Close the terminal and open a new one so it picks up the install.
 
-2. **Get the code.** Either `git clone https://github.com/yourname/REPO.git` or download the zip and unzip it. Then move into the folder:
+2. **Get the code.** Either `git clone https://github.com/puckquant/REPO.git` or download the zip and unzip it. Then move into the folder:
    ```
    cd REPO
    ```
@@ -56,8 +56,8 @@ Charts land in `output/charts/` named `YYYY-MM-DD_chartname.png`. Raw API respon
 
 ## Before your first real post
 
-1. Open `src/hockey/viz/style.py` and set `BRAND` and `HANDLE` at the top.
-2. Search the repo for `yourname/repo` and replace it with your real GitHub path.
+1. Confirm @puckquant is yours on Instagram and X. If either handle differs, change `HANDLE` at the top of `src/hockey/viz/style.py`.
+2. Once the repo exists, set `CODE_URL` in the same file to its full path (for example `github.com/puckquant/REPO`).
 3. Read `docs/brand_style.md` for the visual rules and the Canva/Figma workflow.
 
 ## Layout

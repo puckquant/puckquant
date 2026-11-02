@@ -17,9 +17,10 @@ matplotlib.use("Agg")  # render to files, no window needed
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
-# ---------- identity (placeholders until the name is picked) ----------
-BRAND = "BRAND NAME"
-HANDLE = "@yourhandle"
+# ---------- identity ----------
+BRAND = "PuckQuant"
+HANDLE = "@puckquant"
+CODE_URL = "github.com/puckquant"  # point at the repo itself once it exists
 
 # ---------- palette ----------
 # Brand colors (picked by Jackson)
@@ -187,7 +188,7 @@ def text_slide(heading: str, body: list[str], kicker: str = "", size: str = "por
     """
     import textwrap
 
-    post = new_post(heading, kicker, source="Method + code: github.com/yourname/repo", size=size,
+    post = new_post(heading, kicker, source=f"Method + code: {CODE_URL}", size=size,
                     theme=theme)
     post.ax.remove()
     w, h = SIZES[size]

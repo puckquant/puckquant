@@ -25,7 +25,7 @@ Ten concrete posts drawn from the plan's pillars, ordered so the first few only 
 
 > **[Finding in one sentence.]** [One sentence of caveat, e.g. "It's 14 games, so expect movement."]
 >
-> Data: NHL API. Code: link in bio / github.com/yourname/repo
+> Data: NHL API. Code: link in bio / github.com/puckquant
 >
 > #NHL #HockeyAnalytics #[team tags if one team is the focus]
 

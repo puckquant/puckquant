@@ -1,7 +1,7 @@
 [project]
 name = "hockey"
 version = "0.1.0"
-description = "Open-code NHL analytics: data pulls, charts, and models behind the BRAND_NAME account."
+description = "Open-code NHL analytics: data pulls, charts, and models behind the PuckQuant account."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

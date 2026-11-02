@@ -1,6 +1,6 @@
 # Methods
 
-How every number on a BRAND NAME chart is computed. Link this page from posts. Add a section each time a new metric appears.
+How every number on a PuckQuant chart is computed. Link this page from posts. Add a section each time a new metric appears.
 
 ## Data source
 
