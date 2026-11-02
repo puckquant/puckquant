@@ -17,7 +17,7 @@ The goal: someone scrolling past should recognize a BRAND NAME post before readi
 
 **Canva setup (free plan is enough, do it once):**
 1. Create a 1080 x 1350 design (Instagram portrait) and a 1080 x 1080 design.
-2. Set the background to `#0E1A2B`, add the footer line exactly as the charts have it (source left, brand + handle right, 14 px gray / white bold), and save each as a template.
+2. Set the background to `#012622`, add the footer line exactly as the charts have it (source left, brand + handle right, 14 px slate gray / mint bold), and save each as a template.
 3. Add the colors below to a saved color palette (free plan allows one palette) and use Inter for all text (it is built into Canva).
 4. To build a carousel: duplicate the template, drop the chart PNGs from `output/charts/` onto the chart slides, write the cover and closing slides in Canva, export as PNG.
 
@@ -29,16 +29,21 @@ The goal: someone scrolling past should recognize a BRAND NAME post before readi
 
 | Name | Hex | Use |
 | --- | --- | --- |
-| Navy | `#0E1A2B` | Background, every post |
-| Panel | `#16263D` | Plot area, cards |
-| Ink | `#F3F5F8` | Titles and main text |
-| Muted | `#8A97A8` | Subtitles, axis labels, source line |
-| Grid | `#2A3B55` | Gridlines, rink markings, divider |
-| Ice blue | `#4FC3F7` | Main data color. Most marks are this. |
-| Goal red | `#FF5A5F` | Goals, negatives, the thing that went wrong |
-| Gold | `#FFC857` | One callout per chart, max. The "look here." |
+| Primary (burnt orange) | `#D37F00` | Main data color: dots, bars, goals, the finding |
+| Secondary (deep green) | `#012622` | Background, every post |
+| Accent 1 (slate gray) | `#7E8287` | Subtitles, axis labels, source line, misses and "everything else" |
+| Accent 2 (mint) | `#D3FFF3` | Titles, main text, team labels, a second data series |
 
-Rule of thumb: a chart is mostly ice blue on navy, with red or gold only on the one or two things the sentence is about. If everything is highlighted, nothing is.
+Two working shades are derived from the background so the plot area and gridlines read without adding new colors:
+
+| Role | Hex | Use |
+| --- | --- | --- |
+| Panel | `#0A3530` | Plot area, cards |
+| Grid | `#1F4A44` | Gridlines, rink markings, divider line |
+
+Rule of thumb: mint text on deep green, with orange on the data that matters. When one chart needs a highlight (one team, one player), make that one orange and push the rest to slate gray or faded mint. If everything is highlighted, nothing is.
+
+Contrast check: mint and orange both read clearly on the deep green. Slate gray is softer (about 4:1), so keep it for text 14 pt and up and never for the main finding.
 
 Avoid team colors as the main palette. With 32 teams, half of them clash with the brand and it stops looking like your account.
 

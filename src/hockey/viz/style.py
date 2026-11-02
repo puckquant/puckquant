@@ -22,14 +22,18 @@ BRAND = "BRAND NAME"
 HANDLE = "@yourhandle"
 
 # ---------- palette ----------
-NAVY = "#0E1A2B"      # background, "rink at night"
-PANEL = "#16263D"     # plot area / cards, one step lighter
-INK = "#F3F5F8"       # primary text
-MUTED = "#8A97A8"     # secondary text, axis labels, source line
-GRID = "#2A3B55"      # gridlines, rink markings
-ICE = "#4FC3F7"       # accent 1: the main data color
-GOAL = "#FF5A5F"      # accent 2: goals, "bad", highlights
-GOLD = "#FFC857"      # accent 3: use sparingly, one callout per chart
+# Brand colors (picked by Jackson)
+PRIMARY = "#D37F00"    # burnt orange: the main data color, goals, the finding
+SECONDARY = "#012622"  # deep green: background on every post
+ACCENT_1 = "#7E8287"   # slate gray: secondary text, axis labels, misses
+ACCENT_2 = "#D3FFF3"   # mint: titles and main text, second data series
+
+# Roles used by the chart code (derived from the four brand colors)
+BG = SECONDARY
+PANEL = "#0A3530"      # plot area, one step lighter than the background
+GRID = "#1F4A44"       # gridlines, rink markings, divider
+INK = ACCENT_2
+MUTED = ACCENT_1
 
 # ---------- canvas sizes (pixels) ----------
 SIZES = {
@@ -75,8 +79,8 @@ plt.rcParams.update(
         "ytick.labelsize": 14,
         "axes.spines.top": False,
         "axes.spines.right": False,
-        "figure.facecolor": NAVY,
-        "savefig.facecolor": NAVY,
+        "figure.facecolor": BG,
+        "savefig.facecolor": BG,
     }
 )
 
@@ -127,7 +131,7 @@ def new_post(
 
     if sample:
         fig.text(
-            0.5, 0.5, "SAMPLE DATA", fontsize=110, color=GOAL, alpha=0.18,
+            0.5, 0.5, "SAMPLE DATA", fontsize=110, color=ACCENT_2, alpha=0.12,
             ha="center", va="center", rotation=30, fontweight="bold", zorder=100,
         )
     return Post(fig, ax)
