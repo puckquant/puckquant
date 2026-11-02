@@ -1,0 +1,1372 @@
+{
+ "_note": "SYNTHETIC SAMPLE DATA for testing only. Do not post.",
+ "id": 2026020000,
+ "gameDate": "2026-11-01",
+ "homeTeam": {
+  "id": 1,
+  "abbrev": "HOM"
+ },
+ "awayTeam": {
+  "id": 2,
+  "abbrev": "AWY"
+ },
+ "rosterSpots": [
+  {
+   "playerId": 100,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player0"
+   }
+  },
+  {
+   "playerId": 101,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player1"
+   }
+  },
+  {
+   "playerId": 102,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player2"
+   }
+  },
+  {
+   "playerId": 103,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player3"
+   }
+  },
+  {
+   "playerId": 104,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player4"
+   }
+  },
+  {
+   "playerId": 105,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player5"
+   }
+  },
+  {
+   "playerId": 106,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player6"
+   }
+  },
+  {
+   "playerId": 107,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player7"
+   }
+  },
+  {
+   "playerId": 108,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player8"
+   }
+  },
+  {
+   "playerId": 109,
+   "teamId": 1,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player9"
+   }
+  },
+  {
+   "playerId": 110,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player10"
+   }
+  },
+  {
+   "playerId": 111,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player11"
+   }
+  },
+  {
+   "playerId": 112,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player12"
+   }
+  },
+  {
+   "playerId": 113,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player13"
+   }
+  },
+  {
+   "playerId": 114,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player14"
+   }
+  },
+  {
+   "playerId": 115,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player15"
+   }
+  },
+  {
+   "playerId": 116,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player16"
+   }
+  },
+  {
+   "playerId": 117,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player17"
+   }
+  },
+  {
+   "playerId": 118,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player18"
+   }
+  },
+  {
+   "playerId": 119,
+   "teamId": 2,
+   "firstName": {
+    "default": "Sample"
+   },
+   "lastName": {
+    "default": "Player19"
+   }
+  }
+ ],
+ "plays": [
+  {
+   "eventId": 1,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "00:36",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 34,
+    "yCoord": 2,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 100
+   }
+  },
+  {
+   "eventId": 2,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "02:55",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 61,
+    "yCoord": 8,
+    "eventOwnerTeamId": 2,
+    "shotType": "wrist",
+    "shootingPlayerId": 109
+   }
+  },
+  {
+   "eventId": 3,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "03:07",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 66,
+    "yCoord": 6,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 105
+   }
+  },
+  {
+   "eventId": 4,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "02:09",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -88,
+    "yCoord": -9,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 117
+   }
+  },
+  {
+   "eventId": 5,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "06:33",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 73,
+    "yCoord": -1,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 108
+   }
+  },
+  {
+   "eventId": 6,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "09:41",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -39,
+    "yCoord": 16,
+    "eventOwnerTeamId": 2,
+    "shotType": "tip-in",
+    "shootingPlayerId": 110
+   }
+  },
+  {
+   "eventId": 7,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "17:49",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 70,
+    "yCoord": -1,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 103
+   }
+  },
+  {
+   "eventId": 8,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "12:47",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -67,
+    "yCoord": -13,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 9,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "08:12",
+   "typeDescKey": "goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 42,
+    "yCoord": -23,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "scoringPlayerId": 104
+   }
+  },
+  {
+   "eventId": 10,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "02:14",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -56,
+    "yCoord": -1,
+    "eventOwnerTeamId": 1,
+    "shotType": "slap",
+    "shootingPlayerId": 115
+   }
+  },
+  {
+   "eventId": 11,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "15:58",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 43,
+    "yCoord": 3,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 109
+   }
+  },
+  {
+   "eventId": 12,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "06:30",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -76,
+    "yCoord": -9,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 111
+   }
+  },
+  {
+   "eventId": 13,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "12:47",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 55,
+    "yCoord": -4,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 106
+   }
+  },
+  {
+   "eventId": 14,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "04:37",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 72,
+    "yCoord": -4,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 102
+   }
+  },
+  {
+   "eventId": 15,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "17:35",
+   "typeDescKey": "goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -77,
+    "yCoord": -16,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "scoringPlayerId": 115
+   }
+  },
+  {
+   "eventId": 16,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "04:27",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 31,
+    "yCoord": 21,
+    "eventOwnerTeamId": 2,
+    "shotType": "tip-in",
+    "shootingPlayerId": 101
+   }
+  },
+  {
+   "eventId": 17,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "10:16",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 78,
+    "yCoord": 3,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 103
+   }
+  },
+  {
+   "eventId": 18,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "timeInPeriod": "18:52",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -78,
+    "yCoord": -10,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 115
+   }
+  },
+  {
+   "eventId": 19,
+   "periodDescriptor": {
+    "number": 1
+   },
+   "typeDescKey": "faceoff",
+   "details": {
+    "xCoord": 0,
+    "yCoord": 0
+   }
+  },
+  {
+   "eventId": 20,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "14:49",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 78,
+    "yCoord": 5,
+    "eventOwnerTeamId": 2,
+    "shotType": "wrist",
+    "shootingPlayerId": 118
+   }
+  },
+  {
+   "eventId": 21,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "04:30",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -65,
+    "yCoord": 5,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 102
+   }
+  },
+  {
+   "eventId": 22,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "01:15",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -62,
+    "yCoord": 8,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 101
+   }
+  },
+  {
+   "eventId": 23,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "17:01",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -46,
+    "yCoord": -15,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 108
+   }
+  },
+  {
+   "eventId": 24,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "16:34",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -56,
+    "yCoord": 13,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 104
+   }
+  },
+  {
+   "eventId": 25,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "17:57",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 59,
+    "yCoord": -11,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 118
+   }
+  },
+  {
+   "eventId": 26,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "13:04",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -79,
+    "yCoord": -5,
+    "eventOwnerTeamId": 1,
+    "shotType": "snap",
+    "shootingPlayerId": 101
+   }
+  },
+  {
+   "eventId": 27,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "04:16",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -69,
+    "yCoord": -5,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 102
+   }
+  },
+  {
+   "eventId": 28,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "07:10",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -86,
+    "yCoord": -7,
+    "eventOwnerTeamId": 1,
+    "shotType": "snap",
+    "shootingPlayerId": 107
+   }
+  },
+  {
+   "eventId": 29,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "11:20",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 88,
+    "yCoord": 34,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 116
+   }
+  },
+  {
+   "eventId": 30,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "10:33",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -72,
+    "yCoord": -18,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 100
+   }
+  },
+  {
+   "eventId": 31,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "02:16",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 60,
+    "yCoord": 2,
+    "eventOwnerTeamId": 2,
+    "shotType": "wrist",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 32,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "12:09",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 32,
+    "yCoord": 2,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 116
+   }
+  },
+  {
+   "eventId": 33,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "13:57",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 71,
+    "yCoord": -11,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 110
+   }
+  },
+  {
+   "eventId": 34,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "02:16",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -46,
+    "yCoord": -6,
+    "eventOwnerTeamId": 1,
+    "shotType": "snap",
+    "shootingPlayerId": 109
+   }
+  },
+  {
+   "eventId": 35,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "08:39",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -56,
+    "yCoord": -1,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 108
+   }
+  },
+  {
+   "eventId": 36,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "05:12",
+   "typeDescKey": "goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -33,
+    "yCoord": 8,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "scoringPlayerId": 104
+   }
+  },
+  {
+   "eventId": 37,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "14:32",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 66,
+    "yCoord": -32,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 38,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "17:12",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -46,
+    "yCoord": -15,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 100
+   }
+  },
+  {
+   "eventId": 39,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "17:53",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 44,
+    "yCoord": -40,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 116
+   }
+  },
+  {
+   "eventId": 40,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "12:22",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 86,
+    "yCoord": -3,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 41,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "05:03",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -79,
+    "yCoord": -9,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 104
+   }
+  },
+  {
+   "eventId": 42,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "09:02",
+   "typeDescKey": "goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": -69,
+    "yCoord": 12,
+    "eventOwnerTeamId": 1,
+    "shotType": "snap",
+    "scoringPlayerId": 109
+   }
+  },
+  {
+   "eventId": 43,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "11:21",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 41,
+    "yCoord": 11,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 110
+   }
+  },
+  {
+   "eventId": 44,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "12:05",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 44,
+    "yCoord": 12,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 110
+   }
+  },
+  {
+   "eventId": 45,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "timeInPeriod": "00:05",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "right",
+   "details": {
+    "xCoord": 46,
+    "yCoord": -3,
+    "eventOwnerTeamId": 2,
+    "shotType": "tip-in",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 46,
+   "periodDescriptor": {
+    "number": 2
+   },
+   "typeDescKey": "faceoff",
+   "details": {
+    "xCoord": 0,
+    "yCoord": 0
+   }
+  },
+  {
+   "eventId": 47,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "18:33",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 38,
+    "yCoord": -12,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 103
+   }
+  },
+  {
+   "eventId": 48,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "10:46",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 68,
+    "yCoord": -7,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 109
+   }
+  },
+  {
+   "eventId": 49,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "16:08",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -39,
+    "yCoord": 3,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 118
+   }
+  },
+  {
+   "eventId": 50,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "00:02",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 78,
+    "yCoord": -20,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 103
+   }
+  },
+  {
+   "eventId": 51,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "17:43",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 67,
+    "yCoord": 13,
+    "eventOwnerTeamId": 1,
+    "shotType": "wrist",
+    "shootingPlayerId": 100
+   }
+  },
+  {
+   "eventId": 52,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "17:05",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 58,
+    "yCoord": -3,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 101
+   }
+  },
+  {
+   "eventId": 53,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "07:47",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 73,
+    "yCoord": -25,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 103
+   }
+  },
+  {
+   "eventId": 54,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "01:39",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -59,
+    "yCoord": -4,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 117
+   }
+  },
+  {
+   "eventId": 55,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "18:08",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 34,
+    "yCoord": 6,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 104
+   }
+  },
+  {
+   "eventId": 56,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "15:18",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 58,
+    "yCoord": 9,
+    "eventOwnerTeamId": 1,
+    "shotType": "snap",
+    "shootingPlayerId": 101
+   }
+  },
+  {
+   "eventId": 57,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "02:59",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -57,
+    "yCoord": 7,
+    "eventOwnerTeamId": 1,
+    "shotType": "slap",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 58,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "08:24",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -31,
+    "yCoord": -1,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 118
+   }
+  },
+  {
+   "eventId": 59,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "11:08",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 83,
+    "yCoord": 5,
+    "eventOwnerTeamId": 1,
+    "shotType": "slap",
+    "shootingPlayerId": 108
+   }
+  },
+  {
+   "eventId": 60,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "15:25",
+   "typeDescKey": "missed-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -81,
+    "yCoord": 2,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 113
+   }
+  },
+  {
+   "eventId": 61,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "11:24",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 39,
+    "yCoord": 20,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 102
+   }
+  },
+  {
+   "eventId": 62,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "12:07",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -37,
+    "yCoord": 7,
+    "eventOwnerTeamId": 2,
+    "shotType": "slap",
+    "shootingPlayerId": 115
+   }
+  },
+  {
+   "eventId": 63,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "18:04",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 71,
+    "yCoord": 9,
+    "eventOwnerTeamId": 1,
+    "shotType": "backhand",
+    "shootingPlayerId": 106
+   }
+  },
+  {
+   "eventId": 64,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "03:03",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -84,
+    "yCoord": 7,
+    "eventOwnerTeamId": 1,
+    "shotType": "slap",
+    "shootingPlayerId": 110
+   }
+  },
+  {
+   "eventId": 65,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "11:50",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -67,
+    "yCoord": -22,
+    "eventOwnerTeamId": 2,
+    "shotType": "snap",
+    "shootingPlayerId": 115
+   }
+  },
+  {
+   "eventId": 66,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "17:13",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": -81,
+    "yCoord": -30,
+    "eventOwnerTeamId": 1,
+    "shotType": "tip-in",
+    "shootingPlayerId": 116
+   }
+  },
+  {
+   "eventId": 67,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "01:58",
+   "typeDescKey": "blocked-shot",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 33,
+    "yCoord": -2,
+    "eventOwnerTeamId": 2,
+    "shotType": "backhand",
+    "shootingPlayerId": 104
+   }
+  },
+  {
+   "eventId": 68,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "timeInPeriod": "08:47",
+   "typeDescKey": "shot-on-goal",
+   "situationCode": "1551",
+   "homeTeamDefendingSide": "left",
+   "details": {
+    "xCoord": 40,
+    "yCoord": -15,
+    "eventOwnerTeamId": 1,
+    "shotType": "slap",
+    "shootingPlayerId": 104
+   }
+  },
+  {
+   "eventId": 69,
+   "periodDescriptor": {
+    "number": 3
+   },
+   "typeDescKey": "faceoff",
+   "details": {
+    "xCoord": 0,
+    "yCoord": 0
+   }
+  }
+ ]
+}

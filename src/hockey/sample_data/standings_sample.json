@@ -1,0 +1,613 @@
+{
+ "_note": "SYNTHETIC SAMPLE DATA for testing only. Do not post.",
+ "standings": [
+  {
+   "teamAbbrev": {
+    "default": "ANA"
+   },
+   "teamName": {
+    "default": "ANA (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 9,
+   "losses": 5,
+   "otLosses": 0,
+   "points": 18,
+   "pointPctg": 0.643,
+   "goalFor": 53,
+   "goalAgainst": 40,
+   "goalDifferential": 13
+  },
+  {
+   "teamAbbrev": {
+    "default": "BOS"
+   },
+   "teamName": {
+    "default": "BOS (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 9,
+   "losses": 3,
+   "otLosses": 0,
+   "points": 18,
+   "pointPctg": 0.75,
+   "goalFor": 43,
+   "goalAgainst": 29,
+   "goalDifferential": 14
+  },
+  {
+   "teamAbbrev": {
+    "default": "BUF"
+   },
+   "teamName": {
+    "default": "BUF (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 5,
+   "losses": 8,
+   "otLosses": 0,
+   "points": 10,
+   "pointPctg": 0.385,
+   "goalFor": 31,
+   "goalAgainst": 38,
+   "goalDifferential": -7
+  },
+  {
+   "teamAbbrev": {
+    "default": "CGY"
+   },
+   "teamName": {
+    "default": "CGY (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 5,
+   "losses": 8,
+   "otLosses": 0,
+   "points": 10,
+   "pointPctg": 0.385,
+   "goalFor": 32,
+   "goalAgainst": 38,
+   "goalDifferential": -6
+  },
+  {
+   "teamAbbrev": {
+    "default": "CAR"
+   },
+   "teamName": {
+    "default": "CAR (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 7,
+   "losses": 6,
+   "otLosses": 0,
+   "points": 14,
+   "pointPctg": 0.538,
+   "goalFor": 43,
+   "goalAgainst": 41,
+   "goalDifferential": 2
+  },
+  {
+   "teamAbbrev": {
+    "default": "CHI"
+   },
+   "teamName": {
+    "default": "CHI (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 7,
+   "losses": 7,
+   "otLosses": 1,
+   "points": 15,
+   "pointPctg": 0.5,
+   "goalFor": 36,
+   "goalAgainst": 39,
+   "goalDifferential": -3
+  },
+  {
+   "teamAbbrev": {
+    "default": "COL"
+   },
+   "teamName": {
+    "default": "COL (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 7,
+   "losses": 5,
+   "otLosses": 2,
+   "points": 16,
+   "pointPctg": 0.571,
+   "goalFor": 42,
+   "goalAgainst": 44,
+   "goalDifferential": -2
+  },
+  {
+   "teamAbbrev": {
+    "default": "CBJ"
+   },
+   "teamName": {
+    "default": "CBJ (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 5,
+   "losses": 7,
+   "otLosses": 1,
+   "points": 11,
+   "pointPctg": 0.423,
+   "goalFor": 32,
+   "goalAgainst": 41,
+   "goalDifferential": -9
+  },
+  {
+   "teamAbbrev": {
+    "default": "DAL"
+   },
+   "teamName": {
+    "default": "DAL (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 5,
+   "losses": 9,
+   "otLosses": 0,
+   "points": 10,
+   "pointPctg": 0.357,
+   "goalFor": 34,
+   "goalAgainst": 47,
+   "goalDifferential": -13
+  },
+  {
+   "teamAbbrev": {
+    "default": "DET"
+   },
+   "teamName": {
+    "default": "DET (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 6,
+   "losses": 5,
+   "otLosses": 2,
+   "points": 14,
+   "pointPctg": 0.538,
+   "goalFor": 40,
+   "goalAgainst": 40,
+   "goalDifferential": 0
+  },
+  {
+   "teamAbbrev": {
+    "default": "EDM"
+   },
+   "teamName": {
+    "default": "EDM (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 8,
+   "losses": 5,
+   "otLosses": 2,
+   "points": 18,
+   "pointPctg": 0.6,
+   "goalFor": 49,
+   "goalAgainst": 45,
+   "goalDifferential": 4
+  },
+  {
+   "teamAbbrev": {
+    "default": "FLA"
+   },
+   "teamName": {
+    "default": "FLA (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 7,
+   "losses": 5,
+   "otLosses": 1,
+   "points": 15,
+   "pointPctg": 0.577,
+   "goalFor": 46,
+   "goalAgainst": 44,
+   "goalDifferential": 2
+  },
+  {
+   "teamAbbrev": {
+    "default": "LAK"
+   },
+   "teamName": {
+    "default": "LAK (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 6,
+   "losses": 4,
+   "otLosses": 2,
+   "points": 14,
+   "pointPctg": 0.583,
+   "goalFor": 39,
+   "goalAgainst": 37,
+   "goalDifferential": 2
+  },
+  {
+   "teamAbbrev": {
+    "default": "MIN"
+   },
+   "teamName": {
+    "default": "MIN (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 5,
+   "losses": 10,
+   "otLosses": 0,
+   "points": 10,
+   "pointPctg": 0.333,
+   "goalFor": 41,
+   "goalAgainst": 57,
+   "goalDifferential": -16
+  },
+  {
+   "teamAbbrev": {
+    "default": "MTL"
+   },
+   "teamName": {
+    "default": "MTL (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 7,
+   "losses": 5,
+   "otLosses": 3,
+   "points": 17,
+   "pointPctg": 0.567,
+   "goalFor": 38,
+   "goalAgainst": 42,
+   "goalDifferential": -4
+  },
+  {
+   "teamAbbrev": {
+    "default": "NSH"
+   },
+   "teamName": {
+    "default": "NSH (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 5,
+   "losses": 8,
+   "otLosses": 2,
+   "points": 12,
+   "pointPctg": 0.4,
+   "goalFor": 35,
+   "goalAgainst": 50,
+   "goalDifferential": -15
+  },
+  {
+   "teamAbbrev": {
+    "default": "NJD"
+   },
+   "teamName": {
+    "default": "NJD (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 8,
+   "losses": 3,
+   "otLosses": 3,
+   "points": 19,
+   "pointPctg": 0.679,
+   "goalFor": 48,
+   "goalAgainst": 45,
+   "goalDifferential": 3
+  },
+  {
+   "teamAbbrev": {
+    "default": "NYI"
+   },
+   "teamName": {
+    "default": "NYI (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 6,
+   "losses": 3,
+   "otLosses": 3,
+   "points": 15,
+   "pointPctg": 0.625,
+   "goalFor": 44,
+   "goalAgainst": 45,
+   "goalDifferential": -1
+  },
+  {
+   "teamAbbrev": {
+    "default": "NYR"
+   },
+   "teamName": {
+    "default": "NYR (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 4,
+   "losses": 5,
+   "otLosses": 3,
+   "points": 11,
+   "pointPctg": 0.458,
+   "goalFor": 29,
+   "goalAgainst": 40,
+   "goalDifferential": -11
+  },
+  {
+   "teamAbbrev": {
+    "default": "OTT"
+   },
+   "teamName": {
+    "default": "OTT (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 6,
+   "losses": 6,
+   "otLosses": 2,
+   "points": 14,
+   "pointPctg": 0.5,
+   "goalFor": 48,
+   "goalAgainst": 51,
+   "goalDifferential": -3
+  },
+  {
+   "teamAbbrev": {
+    "default": "PHI"
+   },
+   "teamName": {
+    "default": "PHI (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 8,
+   "losses": 4,
+   "otLosses": 0,
+   "points": 16,
+   "pointPctg": 0.667,
+   "goalFor": 46,
+   "goalAgainst": 34,
+   "goalDifferential": 12
+  },
+  {
+   "teamAbbrev": {
+    "default": "PIT"
+   },
+   "teamName": {
+    "default": "PIT (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 5,
+   "losses": 9,
+   "otLosses": 1,
+   "points": 11,
+   "pointPctg": 0.367,
+   "goalFor": 36,
+   "goalAgainst": 52,
+   "goalDifferential": -16
+  },
+  {
+   "teamAbbrev": {
+    "default": "SJS"
+   },
+   "teamName": {
+    "default": "SJS (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 5,
+   "losses": 5,
+   "otLosses": 3,
+   "points": 13,
+   "pointPctg": 0.5,
+   "goalFor": 38,
+   "goalAgainst": 48,
+   "goalDifferential": -10
+  },
+  {
+   "teamAbbrev": {
+    "default": "SEA"
+   },
+   "teamName": {
+    "default": "SEA (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 12,
+   "wins": 5,
+   "losses": 5,
+   "otLosses": 2,
+   "points": 12,
+   "pointPctg": 0.5,
+   "goalFor": 31,
+   "goalAgainst": 35,
+   "goalDifferential": -4
+  },
+  {
+   "teamAbbrev": {
+    "default": "STL"
+   },
+   "teamName": {
+    "default": "STL (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 6,
+   "losses": 5,
+   "otLosses": 2,
+   "points": 14,
+   "pointPctg": 0.538,
+   "goalFor": 47,
+   "goalAgainst": 47,
+   "goalDifferential": 0
+  },
+  {
+   "teamAbbrev": {
+    "default": "TBL"
+   },
+   "teamName": {
+    "default": "TBL (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 9,
+   "losses": 3,
+   "otLosses": 3,
+   "points": 21,
+   "pointPctg": 0.7,
+   "goalFor": 58,
+   "goalAgainst": 50,
+   "goalDifferential": 8
+  },
+  {
+   "teamAbbrev": {
+    "default": "TOR"
+   },
+   "teamName": {
+    "default": "TOR (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 6,
+   "losses": 6,
+   "otLosses": 1,
+   "points": 13,
+   "pointPctg": 0.5,
+   "goalFor": 33,
+   "goalAgainst": 33,
+   "goalDifferential": 0
+  },
+  {
+   "teamAbbrev": {
+    "default": "UTA"
+   },
+   "teamName": {
+    "default": "UTA (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 13,
+   "wins": 4,
+   "losses": 8,
+   "otLosses": 1,
+   "points": 9,
+   "pointPctg": 0.346,
+   "goalFor": 30,
+   "goalAgainst": 46,
+   "goalDifferential": -16
+  },
+  {
+   "teamAbbrev": {
+    "default": "VAN"
+   },
+   "teamName": {
+    "default": "VAN (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 8,
+   "losses": 4,
+   "otLosses": 2,
+   "points": 18,
+   "pointPctg": 0.643,
+   "goalFor": 39,
+   "goalAgainst": 35,
+   "goalDifferential": 4
+  },
+  {
+   "teamAbbrev": {
+    "default": "VGK"
+   },
+   "teamName": {
+    "default": "VGK (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 14,
+   "wins": 8,
+   "losses": 6,
+   "otLosses": 0,
+   "points": 16,
+   "pointPctg": 0.571,
+   "goalFor": 54,
+   "goalAgainst": 47,
+   "goalDifferential": 7
+  },
+  {
+   "teamAbbrev": {
+    "default": "WSH"
+   },
+   "teamName": {
+    "default": "WSH (sample)"
+   },
+   "conferenceName": "West",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 8,
+   "losses": 4,
+   "otLosses": 3,
+   "points": 19,
+   "pointPctg": 0.633,
+   "goalFor": 56,
+   "goalAgainst": 52,
+   "goalDifferential": 4
+  },
+  {
+   "teamAbbrev": {
+    "default": "WPG"
+   },
+   "teamName": {
+    "default": "WPG (sample)"
+   },
+   "conferenceName": "East",
+   "divisionName": "Sample",
+   "gamesPlayed": 15,
+   "wins": 9,
+   "losses": 3,
+   "otLosses": 3,
+   "points": 21,
+   "pointPctg": 0.7,
+   "goalFor": 44,
+   "goalAgainst": 37,
+   "goalDifferential": 7
+  }
+ ]
+}

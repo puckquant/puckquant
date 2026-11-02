@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# Raw API pulls stay local. Commit small samples only if you need them.
+data/raw/*
+!data/raw/.gitkeep
+# Charts are build output. Commit the ones you post if you want a gallery.
+output/charts/*
+!output/charts/.gitkeep
+.DS_Store
